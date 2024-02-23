@@ -14,9 +14,9 @@ driver.get("https://www.linkedin.com/login")
 
 def login(driver):
     email = driver.find_element(by=By.ID,value="username")
-    email.send_keys("work.arnavchhokra@gmail.com")
+    email.send_keys("")
     pwd = driver.find_element(by=By.ID,value="password")
-    pwd.send_keys("#1Arnavchhokra")
+    pwd.send_keys("")
     submit= driver.find_element(By.CSS_SELECTOR, "button.btn__primary--large")
     submit.click()
     time.sleep(3)
